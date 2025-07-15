@@ -45,21 +45,21 @@ const List = ({ comments }: ListProps) => {
   };
 
   return (
-    <div className="relative max-w-[1200px] mx-auto w-full">
+    <div className="relative max-w-[1200px] mx-auto w-full z-[20]">
       {/* Кастомные стрелки */}
-      <div className="absolute top-1/2 left-0 right-0 z-10 flex justify-between items-center px-4 -translate-y-1/2 pointer-events-none">
+      <div className="absolute top-1/2 z-10 -translate-y-1/2 w-full">
         <div
           onClick={() => sliderRef.current?.slickPrev()}
-          className="pointer-events-auto bg-white shadow-md rounded-full w-[60px] h-[60px] flex items-center justify-center cursor-pointer"
+          className="absolute left-[-70px] bg-white rounded-full w-[60px] h-[60px] shadow-md flex items-center justify-center cursor-pointer hover:bg-gray-100 transition border"
         >
-          <img src={arrowRight} alt="Previous" className="rotate-180 w-6 h-6" />
+          <img src={arrowRight} alt="prev" className="rotate-180 w-6 h-6" />
         </div>
 
         <div
           onClick={() => sliderRef.current?.slickNext()}
-          className="pointer-events-auto bg-white shadow-md rounded-full w-[60px] h-[60px] flex items-center justify-center cursor-pointer"
+          className="absolute right-[-70px] bg-white rounded-full w-[60px] h-[60px] shadow-md flex items-center justify-center cursor-pointer hover:bg-gray-100 transition border"
         >
-          <img src={arrowRight} alt="Next" className="w-6 h-6" />
+          <img src={arrowRight} alt="next" className="w-6 h-6" />
         </div>
       </div>
 
