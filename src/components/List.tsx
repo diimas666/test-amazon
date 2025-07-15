@@ -13,6 +13,7 @@ interface ListProps {
     description: string;
     image: string;
     imgName: string;
+    quote: string;
   }[];
 }
 
@@ -45,7 +46,7 @@ const List = ({ comments }: ListProps) => {
   };
 
   return (
-    <div className="relative max-w-[1200px] mx-auto w-full z-[20]">
+    <div className="relative max-w-[1200px] mx-auto w-full z-[20] ">
       {/* Кастомные стрелки */}
       <div className="absolute top-1/2 z-10 -translate-y-1/2 w-full">
         <div

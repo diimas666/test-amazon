@@ -10,6 +10,8 @@ import imag3 from './assets/image/3.jpg';
 import imagName1 from './assets/1name.jpg';
 import imagName2 from './assets/2name.jpg';
 import imagName3 from './assets/3name.jpg';
+//svg
+import quote from './assets/svg.svg';
 
 const comments = [
   {
@@ -20,6 +22,7 @@ const comments = [
       'Sales Fortuna made managing sales easier and helped us focus on customers. Its tools have been crucial for our growth and client satisfaction.',
     image: imag1,
     imgName: imagName1,
+    quote: quote,
   },
   {
     id: 2,
@@ -29,6 +32,7 @@ const comments = [
       'Sales Fortuna has made sales so much easier for us. It saves time, simplifies the whole process, and helps us land more deals without extra hassle.',
     image: imag2,
     imgName: imagName2,
+    quote: quote,
   },
   {
     id: 3,
@@ -38,15 +42,17 @@ const comments = [
       'Sales Fortuna has simplified our lead generation, helping us attract qualified prospects effortlessly and drive consistent growth.',
     image: imag3,
     imgName: imagName3,
+    quote: quote,
   },
 ];
 function App() {
   return (
     <BGContainer bg={bgImage}>
       <Container>
-        <h1 className="text-center  font-bold text-[48px] leading-[41px] mb-[34px] ">
+        <h1 className="text-center font-bold text-[32px] leading-[36px] sm:text-[48px] sm:leading-[41px] mb-[28px] sm:mb-[34px]">
           Voices of Success with Sales Fortuna
         </h1>
+
         <List comments={comments} />
       </Container>
     </BGContainer>
