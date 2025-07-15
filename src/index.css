@@ -13,3 +13,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-slide > div {
+  padding: 0 8px; /* уменьшаем отступ между карточками */
+}
